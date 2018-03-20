@@ -79,15 +79,6 @@ Add the generator URL to your HTML (use your own URL and path of course):
 <script src="https://yourwebsite.com/assets/font-awesome-lite.js?icons=fab innovato, fas arrow-left"></script>
 ```
 
-Initiate Font Animate:
-
-```javascript
-$(document).ready(function () {
-  $('.font-animate').fontAnimate();
-});
-```
-Done!
-
 ## Options
 | Name            | Type     | Description |
 |-----------------|----------|-------------|
