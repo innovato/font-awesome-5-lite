@@ -8,7 +8,7 @@ Several quick start options are available:
 
 - [Download the latest release.](https://github.com/innovato/font-awesome-5-lite/archive/master.zip)
 - Clone the repo: `git clone https://github.com/innovato/font-awesome-5-lite.git`
-- Install with [composer](https://www.getcomposer.org/): `composer require fontawesomelite`
+- Install with [composer](https://www.getcomposer.org/): `composer require innovato/font-awesome-5-lite`
 
 ### Get the Font Awesome 5 source files (required)
 Get the Font Awesome 5 source files from their official website (https://fontawesome.com/). It's up to you to whether you want to use the Free or Pro version. They're both compatible with this library.

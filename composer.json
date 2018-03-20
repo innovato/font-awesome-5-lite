@@ -14,7 +14,7 @@
             "email": "info@innovato.nl"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev-master",
     "autoload": {
         "psr-4": {
             "Innovato\\FaLite\\": "src"
