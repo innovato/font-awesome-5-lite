@@ -1,0 +1,23 @@
+{
+    "name": "innovato/font-awesome-5-lite",
+    "description": "A PHP library that generates Font Awesome 5 (Pro and Free) SVG JS files and stores them in a cache.",
+    "keywords": ["Font Awesome", "Font Awesome Lite", "Font Awesome CDN"],
+    "homepage": "https://github.com/innovato/font-awesome-5-lite",
+    "type": "library",
+    "require": {
+        "php-64bit": ">=7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Innovato",
+            "email": "info@innovato.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Innovato\\FaLite\\": "src"
+        }
+    }
+}
