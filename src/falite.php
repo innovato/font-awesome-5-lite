@@ -1,6 +1,6 @@
 <?php
 /**
- * FA Lite 0.1.2
+ * FA Lite 0.1.3
  * This PHP library generates Font Awesome 5 (Pro and Free) SVG JS files and stores them in a cache.
  *
  * @copyright Copyright (c) 2018 by Innovato
@@ -29,8 +29,6 @@ class FaLite
     /**
      * Path to the files directory, this directory should contain
      * the FontAwesome JS folder (fa_source) & files (fa-brands.js, fa-light.js, etc.).
-     *
-     * Also make sure this folder contains stripped.min.js.
      *
      * Download Font Awesome Free/Pro at https://fontawesome.com/
      *
@@ -132,7 +130,7 @@ class FaLite
             }
 
             if ($this->icons) {
-                $strippedFile = file_get_contents($this->getJSFilePath('stripped.min'));
+                $strippedFile = file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'stripped.min.js');
 
                 foreach ($this->icons as $type => $icons) {
                     $strippedFile = str_replace('[' . $type . ']', 'var icons = {' . implode('', $icons) . '};', $strippedFile);
