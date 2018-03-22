@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Innovato\\FaLite\\": "src"
+            "Innovato\\": "src"
         }
     }
 }

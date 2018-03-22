@@ -1,6 +1,6 @@
 <?php
 /**
- * FA Lite 0.1.0
+ * FA Lite 0.1.2
  * This PHP library generates Font Awesome 5 (Pro and Free) SVG JS files and stores them in a cache.
  *
  * @copyright Copyright (c) 2018 by Innovato
