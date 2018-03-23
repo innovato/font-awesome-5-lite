@@ -1,6 +1,6 @@
 <?php
 /**
- * FA Lite 0.1.3
+ * Font Awesome 5 Lite 0.1.4
  * This PHP library generates Font Awesome 5 (Pro and Free) SVG JS files and stores them in a cache.
  *
  * @copyright Copyright (c) 2018 by Innovato
@@ -124,13 +124,15 @@ class FaLite
                     $font = strtolower($explodedTrimmedIcons[1]);
 
                     if ($this->types[$prefix]) {
-                        $this->icons[$prefix][$font] = $this->getLineWithString($this->getJSFilePath('fa_source'.DIRECTORY_SEPARATOR.$this->types[$prefix]), $font);
+                        if($line = $this->getLineWithString($this->getJSFilePath('fa_source'.DIRECTORY_SEPARATOR.$this->types[$prefix]), '"'.$font.'"')) {
+                            $this->icons[$prefix][$font] = $line;
+                        }
                     }
                 }
             }
 
             if ($this->icons) {
-                $strippedFile = file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'stripped.min.js');
+                $strippedFile = file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'stripped.js');
 
                 foreach ($this->icons as $type => $icons) {
                     $strippedFile = str_replace('[' . $type . ']', 'var icons = {' . implode('', $icons) . '};', $strippedFile);
@@ -161,7 +163,7 @@ class FaLite
                 return $line;
             }
         }
-        return -1;
+        return false;
     }
 
     /**
