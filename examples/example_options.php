@@ -1,9 +1,9 @@
 <?php
 /**
- * Example file for using FA Lite, all the options are optional!
+ * Example file for using Font Awesome 5 Lite, all the options are optional!
  */
 
-include '../src/falite.php';
+include dirname(dirname(__FILE__))  . DIRECTORY_SEPARATOR . 'autoloader.php';
 
 $faLite = new Innovato\FaLite();
 
